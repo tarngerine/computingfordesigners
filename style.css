@@ -98,15 +98,25 @@ body {
             format("svg");
       }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p, aside, pre {
   font-weight: normal;
   margin: 0;
+}
+
+a, a:visited {
+  color: blue;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 h1 {
   font-size: 10vw;
   rotate: -8deg;
   transform-origin: top left;
+  margin-left: -.8rem;
 }
 
 h2 {
@@ -129,9 +139,15 @@ header {
 
 p {
   font-size: 1.67rem;
+  clear: both;
+  margin-bottom: 5rem;
 }
 
 aside {
+  clear: both;
+}
+
+aside p {
   font-size: 1.33rem;
   padding-left: 25vw;
 }
