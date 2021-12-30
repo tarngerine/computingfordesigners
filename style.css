@@ -35,6 +35,8 @@ body {
 }
 * {
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 [hidden] {
   display: none !important;
@@ -102,17 +104,34 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 10vw;
   rotate: -8deg;
+  transform-origin: top left;
 }
 
 h2 {
+  font-size: 5vw;
   color: blue;
-  rotate: 8deg;
-  float: right;
-  clear: both;
+  rotate: 4deg;
+  transform-origin: top left;
+  right: 0;
+  position: absolute;
 }
 
 main {
-  padding: 
+  padding-top: 10vw;
+  position: relative;
+}
+
+header {
+  margin-bottom: 20vw;
+}
+
+p {
+  font-size: 1.67rem;
+}
+
+aside {
+  font-size: 1.33rem;
+  padding-left: 25vw;
 }
