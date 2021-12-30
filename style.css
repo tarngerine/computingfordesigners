@@ -33,6 +33,23 @@ body {
   font-size: 1rem;
   padding: 1rem;
 }
+
+@media (min-width: 1000px) {
+  html {
+    font-size: 20px;  
+  }
+  body {
+    padding: 1rem; 4rem;
+  }
+  header {
+    scale: .8;
+  }
+  
+  main {
+    max-width: 960px;  
+  }
+}
+
 * {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -122,20 +139,25 @@ a:hover {
 }
 
 a.button {
-  display: block;
+  display: inline-block;
   background: blue;
   color: white;
   padding: 1rem;
   border-radius: 1rem;
   text-decoration: none;
   text-align: center;
-
-  transition: all 0.25s ease-in-out;
 }
 
-a.button:hover {
+a.spin {
+  transition-property: rotate, scale;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-in-out;
+  transform-origin: center;
+}
+
+a.spin:hover {
+  rotate: -10deg !important;
   scale: 1.1;
-  rotate: 10deg;
 }
 
 h1 {
@@ -155,14 +177,15 @@ h2 {
 }
 
 main {
-  padding-top: 10vw;
   padding-bottom: 8rem;
   position: relative;
   margin: 0 auto;
 }
 
 header {
-  margin-bottom: 20vw;
+  padding-top: 10vw;
+  margin-bottom: 10rem;
+  position: relative;
 }
 
 p {
