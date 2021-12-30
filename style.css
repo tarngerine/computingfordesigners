@@ -32,6 +32,7 @@ html {
 body {
   font-size: 1rem;
   padding: 1rem;
+  
 }
 * {
   box-sizing: border-box;
@@ -138,9 +139,17 @@ header {
 }
 
 p {
-  font-size: 1.67rem;
+  font-size: 1.5rem;
   clear: both;
   margin-bottom: 5rem;
+}
+
+p.big {
+  font-size: 1.8rem;
+}
+
+p.small {
+  font-size: 1.33rem;
 }
 
 aside {
@@ -148,6 +157,5 @@ aside {
 }
 
 aside p {
-  font-size: 1.33rem;
   padding-left: 25vw;
 }
