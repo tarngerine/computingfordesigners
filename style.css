@@ -113,6 +113,34 @@ a:hover {
   text-decoration: underline;
 }
 
+a.button {
+   display: block;
+  background: blue;
+  color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  text-align: center;
+  
+  transition: all .25s ease-in-out;
+}
+
+a.button:hover {
+  scale: 1.1;
+
+        animation: rotate .5s ease-in-out;
+}
+
+
+    @keyframes rotate{
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+
 h1 {
   font-size: 10vw;
   rotate: -8deg;
@@ -131,6 +159,7 @@ h2 {
 
 main {
   padding-top: 10vw;
+  padding-bottom: 8rem;
   position: relative;
 }
 
@@ -158,4 +187,18 @@ aside {
 
 aside p {
   padding-left: 25vw;
+}
+
+footer {
+  margin-top: 30vh;
+}
+
+footer a, footer a:visited {
+  color: #00d93e;
+  font-size: 1.5rem;
+  
+}
+
+footer a:hover {
+  text-decoration: none;
 }
