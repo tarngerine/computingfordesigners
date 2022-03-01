@@ -156,20 +156,19 @@ a.button {
 }
 
 a.spin {
-  transition-property: rotate, scale;
+  transition-property: transform;
   transition-duration: 0.25s;
   transition-timing-function: ease-in-out;
   transform-origin: center;
 }
 
 a.spin:hover {
-  rotate: -10deg !important;
-  scale: 1.1;
+  transform: rotate(-10deg) scale(1.1) !important;
 }
 
 h1 {
   font-size: 10vw;
-  rotate: -8deg;
+  transform: rotate(-8deg);
   transform-origin: top left;
   margin-left: -0.8rem;
 }
@@ -177,7 +176,7 @@ h1 {
 h2 {
   font-size: 6vw;
   color: blue;
-  rotate: 4deg;
+  transform: rotate(4deg);
   transform-origin: top left;
   right: 0;
   position: absolute;
