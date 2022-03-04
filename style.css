@@ -229,3 +229,7 @@ footer a:visited {
 footer a:hover {
   text-decoration: none;
 }
+
+.strikethrough {
+  text-decoration: line-through;
+}
