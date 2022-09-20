@@ -15,9 +15,9 @@ to this section's matching END comment to see page-specific styles.
 
 /* Our default values set as CSS variables */
 :root {
-  --color-bg: #69F7BE;
+  --color-bg: #69f7be;
   --color-text-main: #000000;
-  --color-primary: #FFFF00;
+  --color-primary: #ffff00;
   --wrapper-height: 87vh;
   --image-max-width: 300px;
   --image-margin: 3rem;
@@ -36,24 +36,23 @@ body {
 
 @media (min-width: 1000px) {
   html {
-    font-size: 20px;  
+    font-size: 20px;
   }
   body {
-    padding: 1rem; 4rem;
+    padding: 1rem 4rem;
   }
   header {
-    scale: .8;
+    scale: 0.8;
   }
-  
+
   main {
-    max-width: 960px;  
+    max-width: 960px;
   }
 }
 
 @media (min-width: 1400px) {
-  
   header {
-    scale: .5;
+    scale: 0.5;
   }
 }
 
@@ -208,12 +207,9 @@ p.small {
   font-size: 1.33rem;
 }
 
-aside {
+main aside {
   clear: both;
   padding-left: 25%;
-}
-
-aside p {
 }
 
 footer {
@@ -232,4 +228,16 @@ footer a:hover {
 
 .strikethrough {
   text-decoration: line-through;
+}
+
+aside.banner {
+  background: #f3eeda;
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: 960px;
+  border-radius: 2em;
+}
+
+aside.banner p {
+  margin-bottom: 1rem;
 }
